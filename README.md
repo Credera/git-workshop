@@ -16,11 +16,11 @@ Set up Git on your machine. You can refer to [this GitHub guide](https://docs.gi
 
 Then, [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) the repository. Cloning the repository downloads the project files from GitHub to your local machine so you can work on the project locally before pushing changes back up to GitHub.
 
-TODO: Add screenshot
+![clone repo](docs/img/clone_repo.png)
 
 Enable [GitHub Pages](https://pages.github.com/). We'll be using GitHub Pages to host the webpage contents stored in this repository.
 
-TODO: Add screenshot
+![github pages](docs/img/github_pages.png)
 
 ## Workshop Steps
 
@@ -42,11 +42,11 @@ To see what we're working with, we can deploy the current state of the website t
 
 Head over to the Actions tab and click on the Deploy Webpage workflow. Then, click on the "Run workflow" dropdown and click on the "Run workflow" button.
 
-TODO: Add screenshot
+![run workflow](docs/img/run_workflow.png)
 
 After the deploy job completes, you should see a link to the website. You can click on the link to view your deployed website.
 
-TODO: Add screenshot
+![deploy website](docs/img/deploy_website.png)
 
 ### Add a New Feature
 
@@ -85,21 +85,15 @@ git push --set-upstream origin feature/tacocat
 
 Let's create a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) to review and merge the changes to the `main` branch.
 
-TODO: Add screenshot
-
 Typically, pull requests are used to review and discuss changes before merging them in to the main branch.
 
 After you merge in the pull request, you can head over to the Deploy Webpage GitHub Actions workflow and see it automatically run. After the workflow completes, head over to the deployed webpage and confirm that the tacocat content has been added.
-
-TODO: Add screenshot
 
 ### Handle a Merge Conflict
 
 If you followed the setup instructions, you should see a branch called `feature/taco-image`. This branch adds an an image of a taco to the website.
 
 We can try and create a pull request for the `feature/taco-image` branch; however, we'll soon find out the GitHub shows that there are merge conflicts between the `feature/taco-image` branch and the `main` branch. Merge conflicts may happen when team members are working on the same parts of a project and make conflicting changes. We'll need to manually resolve these conflicts before we are able to merge in the changes.
-
-TODO: Add screenshot
 
 Check out the `main` branch.
 
@@ -156,8 +150,6 @@ Now that we've pushed up our changes with the merge conflict resolved, we can me
 
 
 After the Deploy Webpage GitHub Actions workflow completes, head over to the deployed webpage and confirm that the taco image has been added.
-
-TODO: Add screenshot
 
 ## Additional Git Concepts
 
