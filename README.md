@@ -70,6 +70,12 @@ Then, paste in under in the section that contains the following:
 <p><!-- REPLACE ME --></p>
 ```
 
+Let's also update the webpage title to make it more accurate.
+
+```html
+<h1>Tacos and More!</h1>
+```
+
 To track this change in the Git history, we can [add the change and commit it](https://www.atlassian.com/git/tutorials/saving-changes).
 
 ```
@@ -92,6 +98,18 @@ After you merge in the pull request, you can head over to the Deploy Webpage Git
 ### Handle a Merge Conflict
 
 If you followed the setup instructions, you should see a branch called `feature/taco-image`. This branch adds an an image of a taco to the website.
+
+Update the following line from
+
+```html
+<img src="REPLACE-ME" />
+```
+
+to the following
+
+```html
+<img src="src/img/tacos.jpg" />
+```
 
 We can try and create a pull request for the `feature/taco-image` branch; however, we'll soon find out the GitHub shows that there are merge conflicts between the `feature/taco-image` branch and the `main` branch. Merge conflicts may happen when team members are working on the same parts of a project and make conflicting changes. We'll need to manually resolve these conflicts before we are able to merge in the changes.
 
