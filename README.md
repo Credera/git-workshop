@@ -1,5 +1,7 @@
 # Git Workshop
 
+Test branch protection.
+
 This project is intended to show how Git can be used to version control your code.
 
 This project accompanies the Git Workshop presentation presented by Credera. For more information on Credera, please visit our [website](https://credera.com/)!
